@@ -25,6 +25,18 @@ L. Ma, Y. Tian, P. Xing and T. Huang, "Residual-Based Post-Processing for HEVC,"
 |KristenAndSara   |         -9.2% | -10.3%| -11.0%|-14.4% |
 |Average          |         -7.3% | -8.2% | -8.6% |-10.9% |
 
+**The run-time complexity:**
+
+ The operating system is Windows Server 2012 R2 Standard and the memory is 256 GB. The table below shows the average run-time complexity in each class, and all of the time tests are conducted without GPU acceleration.
+ 
+|Enc T[s] |HM 16.0 |Residual-VRN|
+|:---:    |:---:   |:---:       |
+|Class A  |1240.37 |23522.46    |
+|Class B  |1027.21 |22040.25    |
+|Class C  |539.06  |8998.16     |
+|Class D  |220.56  |2241.11     |
+|Class E  |631.57  |13316.99    | 
+
 ## Dataset Preparation
 Download HEVC standard video sequences and encode them.
 Arrange them in this way:
