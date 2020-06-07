@@ -1,5 +1,7 @@
 # Residual-VRN
-Residual-Based Post-Processing for HEVC[J]. IEEE MultiMedia
+L. Ma, Y. Tian, P. Xing and T. Huang, "Residual-Based Post-Processing for HEVC," in IEEE MultiMedia, vol. 26, no. 4, pp. 67-79, 1 Oct.-Dec. 2019
+
+![](Residual-Based%20Post-processing%20for%20HEVC.jpg)
 
 **The result are as follows:**
 
