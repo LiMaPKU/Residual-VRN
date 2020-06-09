@@ -9,6 +9,15 @@ from dataflow import ios
 
 
 def predict(pred_path, rec_path, predict_path, model_path, batch_size, n_frames):
+    """
+    :param pred_path: the path of predicted frames
+    :param rec_path:  the path of reconstructed frames
+    :param predict_path: the path of result
+    :param model_path: model path
+    :param batch_size: batch size
+    :param n_frames: nums of the frames
+    :return: None
+    """
     with tf.Graph().as_default() as g:
         with tf.gfile.FastGFile(model_path, 'rb') as f:
             graph_def = tf.GraphDef()

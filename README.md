@@ -1,5 +1,5 @@
 # Residual-VRN
-L. Ma, Y. Tian, P. Xing and T. Huang, "Residual-Based Post-Processing for HEVC," in IEEE MultiMedia, vol. 26, no. 4, pp. 67-79, 1 Oct.-Dec. 2019
+ L. Ma, Y. Tian, P. Xing and T. Huang, "Residual-Based Post-Processing for HEVC," in IEEE MultiMedia, vol. 26, no. 4, pp. 67-79, 1 Oct.-Dec. 2019
 
 ![](Residual-Based%20Post-processing%20for%20HEVC.jpg)
 
@@ -38,8 +38,8 @@ L. Ma, Y. Tian, P. Xing and T. Huang, "Residual-Based Post-Processing for HEVC,"
 |Class E  |631.57  |13316.99    | 
 
 ## Dataset Preparation
-Download HEVC standard video sequences and encode them.
-Arrange them in this way:
+ Download HEVC standard video sequences and encode them.
+ Arrange them in this way:
 ```
 |YUV
 |-- ClassA
@@ -74,11 +74,23 @@ Arrange them in this way:
 |   |-- ...
 ```
 
-## Test
+## Using Residual-VRN
 ```bash
 CUDA_VISIBLE_DEVICES='your deviced ids' python test.py --qp 22 --batch_size 4 --Class A
 ```
-
+If you want to test on other datasets, you can use the function 'predict' in test.py. 
+```angular2
+def predict(pred_path, rec_path, predict_path, model_path, batch_size, n_frames):
+    """
+    :param pred_path: the path of predicted frames
+    :param rec_path:  the path of reconstructed frames
+    :param predict_path: the path of result
+    :param model_path: model path
+    :param batch_size: batch size
+    :param n_frames: nums of the frames
+    :return: None
+    """
+```
 
 
 
